@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/playcontrols">
+
+            <TextView
+                android:id="@+id/titulo_cancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUDIO DE PRUEBA"
+                android:textStyle="bold"
+                android:textColor="#787878"
+                android:ellipsize="end"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/artista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUANES"
+                android:textStyle="bold"
+                android:textColor="#787878"
+                android:ellipsize="end"
+                android:lines="1"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:id="@+id/playcontrols">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_atras"
+                android:src="@android:drawable/ic_media_previous"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_play"
+                android:src="@android:drawable/ic_media_play"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_adelante"
+                android:src="@android:drawable/ic_media_next"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_cerrar"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cice.foregroundservice.MainActivity">
+
+   <Button
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:id="@+id/boton1"
+       android:text="INICIAR FG SERVICE"
+       android:onClick="iniciarServicio"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/boton2"
+        android:text="DETENER FG SERVICE"
+        android:onClick="pararServicio"/>
+
+</LinearLayout>
